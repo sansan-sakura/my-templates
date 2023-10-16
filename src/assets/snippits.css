@@ -1,0 +1,11 @@
+/* Dark Mode one idea */
+.fake-dark-mode {
+  filter: invert(100%);
+  transition: all 0.5s;
+}
+
+/***************** Memo ******************** */
+/* fnot-size can be % */
+
+/* Never used propaties */
+text-transform: capitalize;
