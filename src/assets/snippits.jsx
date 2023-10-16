@@ -35,6 +35,11 @@ function PostProvider() {
       <div>
         <button onClick={setIsFakeDark((d) => !d)}></button>
       </div>
+      {/* Nice way of displaying copyright */}
+      <p className={s.copyright}>
+        &copy; Copyright
+        {new Date().getFullYear()} by WorldWise Inc.
+      </p>
     </PostContext.Provider>
   );
 }

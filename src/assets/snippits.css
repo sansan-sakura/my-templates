@@ -4,8 +4,59 @@
   transition: all 0.5s;
 }
 
+/* spinner  divx2 */
+.spinnerContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, var(--color-light--2));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* loading status css for a form */
+.form.loading {
+  opacity: 0.3;
+}
+
+.form.loading button {
+  pointer-events: none;
+  background-color: var(--color-light--1);
+  border: 1px solid var(--color-light--1);
+  color: var(--color-dark--0);
+}
+
 /***************** Memo ******************** */
 /* fnot-size can be % */
 
-/* Never used propaties */
+/* Never used propaties 
 text-transform: capitalize;
+overscroll-behavior-y: none;
+background-image: linear-gradient(
+    rgba(36, 42, 46, 0.8),
+    rgba(36, 42, 46, 0.8)
+  ),
+  url(imagePath);
+  
+   box-shadow: 0 0.8rem 2.4rem rgba(36, 42, 46, 0.5);
+  
+  .cityList::-webkit-scrollbar {
+  width: 0;
+}
+
+ aspect-ratio: 1;
+  
+  */
